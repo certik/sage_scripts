@@ -128,7 +128,7 @@ if [ "$SAGE_SERVER" = "" ]; then
 fi
 
 if [ "$DOT_SAGE" = "" ]; then
-    DOT_SAGE="$HOME/.sage/"
+    DOT_SAGE="$HOME/.spd/"
     export DOT_SAGE
 fi
 
