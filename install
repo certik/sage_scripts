@@ -350,7 +350,9 @@ export ZNPOLY
 # NOW do the actual build
 
 time make -f standard/deps $1
-"$SAGE_ROOT"/sage -docbuild --jsmath all html
+
+# This fails even if we rename it to spd, don't know why:
+#"$SAGE_ROOT"/spd -docbuild --jsmath all html
 
 if [ "$1" = "all" -a $? = 0 ]; then
     echo "To install gap, gp, singular, etc., scripts"
